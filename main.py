@@ -37,7 +37,7 @@ def on_callback_query(msg):
   
 
 if __name__ == "__main__":
-    TOKEN = "1142245923:AAG1ZFHUeeWQPeeYtL6Wl-zkGu8NB7rQgYU"  # get token from command-line
+    TOKEN = sys.argv[1]  # get token from command-line
     urlNationalData = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-andamento-nazionale.json"
     bot = telepot.Bot(TOKEN)
     bot.urlNationalData = urlNationalData
